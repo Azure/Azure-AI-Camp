@@ -1,0 +1,10 @@
+azureml-sdk==1.0.83
+torch=1.1.0
+torchvision=0.3.0
+tensorflow==1.15.2
+keras==2.2.4
+opencv-python==4.1.1.26
+Pillow
+azure-storage-blob==2.1.0
+pandas
+scikit-learn
