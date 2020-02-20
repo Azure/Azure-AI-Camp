@@ -68,11 +68,18 @@ For day 1, most of the hands-on work will be in the form of Databricks notebooks
 
 For day 2, most of the hands-on work will be in Jupyter notebooks run locally or on an Azure Data Science Virtual Machine.  Whether local or on the VM, the learner will need to set this up for themselves.  More information on provisioning the Ubuntu Data Science Virtual Machine can be found <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro" target="blank_">here</a> and using Jupyterhub in the section on that tool <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#jupyterhub-and-jupyterlab" target="blank_">here</a>.
 
+## Additional notes
+
+In using and contributing to this repo, please adhere to <a href="https://opensource.microsoft.com/codeofconduct" target="_blank">Microsoft Open Source Code of Conduct</a>.
+
+## Contributing
+
+For contributing, guidelines may be found in [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Repo structure
 
 ```
 README.md
-requirements.txt
 /day1
   Readme.md
   /1.2.AzureMLOverview
