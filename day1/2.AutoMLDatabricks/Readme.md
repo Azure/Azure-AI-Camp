@@ -1,7 +1,7 @@
-# Day 2
+# Day 1
 ---
 
-The day 2 platform is Azure Databricks.
+The day 1 platform is Azure Databricks.
 
 Topics covered
 ---
