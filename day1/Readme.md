@@ -1,4 +1,4 @@
-# Day 1 Distributed deep learning training using TensorFlow and Keras with HorovodRunner
+# Day 1 
 ---
 
 The day 1 platform is Azure Databricks.
