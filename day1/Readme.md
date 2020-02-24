@@ -10,7 +10,6 @@ Topics covered
 * 4: Parallel and distributed training​
 
 Instruction notes
----
 
 Install the following libraries into the "Feature Engineering" Databricks cluster:
 
