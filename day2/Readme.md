@@ -7,7 +7,7 @@ Topics covered
 ---
 * 1.1:  Azure ML with AML Compute for Image Classification
 * 1.2:  Real world example with YOLO v3
-* 2:  Deploy an Azure ML model as an Edge Module
+* 2.0:  Deploy an Azure ML model as an Edge Module
 
 Instruction notes
 ---
