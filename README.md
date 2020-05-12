@@ -1,50 +1,68 @@
-# Azure AI Camp 
-<img src="assets/azure_camp.jpg" width="30%" align="right">
-
-Here, the ML practioner will learn how to use Azure ML, Databricks and other Microsoft AI technologies to unlock insights on big datasets and deploy AI services to the cloud and edge.  It is designed as a hands-on workshop experience, recommended in instructor-led format or on-demand learning by using the [documentation](#on-demand-learning) and resources provided for guidance.
+<img src="assets/azure_camp.jpg" width="100%">
+---
+Through the Azure AI Camp, the ML practioner will learn how to use Azure ML, Databricks, the ML on the Edge and other Microsoft AI technologies to unlock insights on big datasets and deploy AI services to the cloud and edge.  It is designed as a hands-on workshop experience, recommended in instructor-led format or on-demand learning by using the [documentation](#on-demand-learning) and resources provided for guidance.
 
 ## Prerequisites
 
-1.  Python proficiency
-2.  Azure Storage Account
-3.  Access to an Azure Databricks Workspace (this is usually a shared resource for an org) and pre-provisioned cluster of type: 
-  - Recommended SKU: `Standard_D16_v3`
-  - Runtime `6.1 ML (includes Apache Spark 2.4.4, Scala 2.11)`.
-4.  Access to an Azure ML Workspace (this is usually a shared resource for an org)  - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-manage-workspace" target="blank_">Doc</a>
-5.  Access to an Ubuntu Data Science Virtual Machine and Jupyterhub (this is usually a shared resource for an org) - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#jupyterhub-and-jupyterlab" target="_blank">Doc</a>
-6.  Git installed locally
-7.  Python 3.5+ installed locally (Anaconda or Miniconda recommended)
-8.  Code editor like VSCode or PyCharm
+Required
+
+1.  Python proficiency - <a href="https://rheartpython.github.io/navigating-ml/learning-python/" target="blank_">Resources</a>
+2.  Azure Subscription
+    - <a href="https://azure.microsoft.com/en-us/free/" target="blank_">Free trial</a>
+    - <a href="https://github.com/siriuscomputersolutions/azure-cie/blob/master/1-GovMonSec/2-Exercise%20-%20Create%20an%20Azure%20Pass%20subscription%20-%2010%20mins.md" target="blank_">Redeem Azure Pass</a>
+3.  Git proficiency and installed locally -  <a href="https://guides.github.com/introduction/git-handbook/" target="blank_">Git Handbook</a>
+
+Recommended
+
+1.  Machine learning and computer vision basics - <a href="https://cs231n.github.io/classification/" target="blank_">Course material on image classification</a>
+1.  Python 3.6+ installed locally - <a href="https://docs.anaconda.com/anaconda/install/" target="blank_">Installation of Anaconda</a>
+2.  Code editor like VSCode - <a href="https://code.visualstudio.com/download" target="blank_">Download Visual Studio Code</a>
+
+## Resources provisioned
+
+In this workshop, the following resources will get provisioned.  In practice, most are shared amongst an organization or group.  For this workshop it will depend upon the Azure Subscription setup.
+
+1.  Azure Storage Account - <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal" target="blank_">Docs</a>
+2.  Azure ML Workspace - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-manage-workspace" target="blank_">Docs</a>
+3.  Azure Databricks Workspace (<a href="https://docs.databricks.com/" target="_blank">Docs</a>) including:
+    - ML runtime cluster
+    - Non-ML runtime cluster
+4.  Ubuntu Data Science Virtual Machine - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#jupyterhub-and-jupyterlab" target="_blank">Docs</a>
+
 
 ## Agenda
 
-### Day 1​
+### Day 1
 ---
-* (1)  AI at MS Overview​
-    * (1.1) Cognitive Services overview
-    * (1.2) Azure ML overview
-    * _Break_
-    * (1.3) Databricks with Azure ML overview
-*  _Lunch_
-* (2)  Auto ML with Databricks
-* (3)  Azure ML with Databricks and Spark ML
-*  _Break_
-* (4) Parallel and distributed training​
+- [_Introductions and kick-off_]
+1. AI at MS Overview
+    - Data Science and Azure
+    - Cog Servs overview
+    - Azure ML overview
+    - Databricks overview
+- [_Break_]
+- [_Ensure setup_]
+- [_Break_]
+2. Azure ML on DSVM
+    - Image classification with PyTorch estimator
+    - Object detection with YOLO 
+    - Azure ML with IoT
+- [_Break_]
+3. Video Analytics discussion
+- [_Wrap-up and feedback_]
+ 
 
-​
-### Day 2​
+### Day 2
 ---
-
-* (1) Azure ML on Data Science Virtual Machine
-    * (1.1) Azure ML with AML Compute for Image Classification
-    * _Break_
-    * (1.2) Real world example in VSCode
-*  _Lunch_
-* (2) Deploy an Azure ML model as an Edge Module
-*  _Break_
-* (3) QnA Sessions
-* _Break_
-* (4) Wrap-up and feedback
+1. Deep dive in Databricks
+- [_Ensure Databricks setup_]
+- [_Break_]
+2. Auto ML with Databricks
+3. Parallel and distributed training in Databricks
+- [_Break_]
+4. Azure ML with Spark ML/MLLib for image classification
+5. Databricks + Azure ML + MLFlow
+- [_Wrap-up and feedback_]
 
 ## Technologies
 
@@ -56,9 +74,11 @@ Here, the ML practioner will learn how to use Azure ML, Databricks and other Mic
 
 ## Setup on day-of
 
-1. Git clone repo:  `git clone https://github.com/michhar/Azure-AI-Camp.git`
-2. Set up an Azure Storage container
-3. Download Azure ML Workspace `config.json`
+1. Git clone repo
+
+    `git clone https://github.com/michhar/Azure-AI-Camp.git`
+
+2. Create or download Azure ML Workspace configuration file (`config.json`) locally - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-environment#workspace" target="blank_">Doc</a>
 
 ## On-demand learning
 
@@ -75,24 +95,3 @@ In using and contributing to this repo, please adhere to <a href="https://openso
 ## Contributing
 
 For contributing, guidelines may be found in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Repo structure
-
-```
-README.md
-/day1
-  Readme.md
-  /1.2.AzureMLOverview
-  /1.3.DatabricksAzureMLOverview
-  /2.AutoMLDatabricks
-  /3.AzureMLSparkMLDatabricks
-  /4.ParallelDistributedTraining
-/day2
-  Readme.md
-  /1.1.ImageClassificationAmlCompute
-  /1.2.ReadWorldExampleYOLO
-  /2.IoTEdgeModule
-  /3.Bonus
-/instructor
-  Readme.md
-```
