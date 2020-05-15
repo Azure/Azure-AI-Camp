@@ -1,6 +1,6 @@
 <img src="assets/azure_camp.jpg" width="100%">
----
-Through the Azure AI Camp, the ML practioner will learn how to use Azure ML, Databricks, the ML on the Edge and other Microsoft AI technologies to unlock insights on big datasets and deploy AI services to the cloud and edge.  It is designed as a hands-on workshop experience, recommended in instructor-led format or on-demand learning by using the [documentation](#on-demand-learning) and resources provided for guidance.
+
+Through the Azure AI Camp, the ML practitioner will learn how to use Azure ML, Databricks, ML on the Edge and other Microsoft AI technologies to unlock insights on big datasets and deploy AI services to the cloud and edge.  It is designed as a hands-on workshop experience, recommended in instructor-led format or on-demand learning by using the [documentation](#on-demand-learning) and resources provided for guidance.
 
 ## Prerequisites
 
