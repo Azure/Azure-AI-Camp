@@ -34,35 +34,25 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 
 ### Day 1
 ---
-- [_Introductions and kick-off_]
 1. AI at MS Overview
     - Data Science and Azure
     - Cog Servs overview
     - Azure ML overview
     - Databricks overview
-- [_Break_]
-- [_Ensure setup_]
-- [_Break_]
 2. Azure ML on DSVM
     - Image classification with PyTorch estimator
     - Object detection with YOLO 
     - Azure ML with IoT
-- [_Break_]
 3. Video Analytics discussion
-- [_Wrap-up and feedback_]
  
 
 ### Day 2
 ---
-1. Deep dive in Databricks
-- [_Ensure Databricks setup_]
-- [_Break_]
-2. Auto ML with Databricks
-3. Parallel and distributed training in Databricks
-- [_Break_]
-4. Azure ML with Spark ML/MLLib for image classification
-5. Databricks + Azure ML + MLFlow
-- [_Wrap-up and feedback_]
+1. Deep dive into Databricks
+2. Azure ML with Databricks
+3. Parallel and distributed training
+
+- And more!
 
 ## Technologies
 
@@ -76,17 +66,17 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 
 1. Git clone repo
 
-    `git clone https://github.com/michhar/Azure-AI-Camp.git`
+    `git clone https://github.com/Azure/Azure-AI-Camp.git`
 
 2. Create or download Azure ML Workspace configuration file (`config.json`) locally - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-environment#workspace" target="blank_">Doc</a>
 
 ## On-demand learning
 
-Browse through day 1 and day 2 folders, noting that there are individual `Readme.md` documents in each section.  The day 1 platform is an Azure Databricks Workspace and Day 2 is utilizing the same dataset for suspicious behavior, but further exploring the Azure ML Python SDK with Jupyter notebooks on an Azure Data Science Virtual Machine as the platform. 
+Browse through day 1 and day 2 folders, noting that there are individual `Readme.md` documents in each section.  The day 1 platform is an Azure Data Science Machine and for day 2, the work will be done on a Databricks Workspace.  Various datasets in computer vision and related fields are used in conjuction with tools like Jupyter notebooks, Databricks notebooks, the Azure ML Python SDK and more.
 
-For day 1, most of the hands-on work will be in the form of Databricks notebooks which are very similar to Jupyter notebooks, utilizing a cluster on an Azure Databricks Workspace (see Prerequisites section for cluster information).  The notebooks for day 1 are all stored as archives with the `.dbc` extension.  It is straightforward to import these notebooks into the Databricks workspace - instructions can also be found <a href="https://docs.databricks.com/notebooks/notebooks-manage.html#import-a-notebook" target="blank_">here</a> (import under workspace or individual user).
+For day 1, most of the hands-on work will be in Jupyter notebooks run locally or on an Azure Data Science Virtual Machine.  Whether local or on the VM, the learner will need to set this up for themselves.  More information on provisioning the Ubuntu Data Science Virtual Machine can be found <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro" target="blank_">here</a> and using Jupyterhub in the section on that tool <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#jupyterhub-and-jupyterlab" target="blank_">here</a>.
 
-For day 2, most of the hands-on work will be in Jupyter notebooks run locally or on an Azure Data Science Virtual Machine.  Whether local or on the VM, the learner will need to set this up for themselves.  More information on provisioning the Ubuntu Data Science Virtual Machine can be found <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro" target="blank_">here</a> and using Jupyterhub in the section on that tool <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#jupyterhub-and-jupyterlab" target="blank_">here</a>.
+For day 2, the hands-on work will be in the form of Databricks notebooks which are very similar to Jupyter notebooks, utilizing a cluster on an Azure Databricks Workspace.  The notebooks for day 2 are all stored as archives with the `.dbc` extension.  It is straightforward to import these notebooks into the Databricks workspace - instructions can also be found <a href="https://docs.databricks.com/notebooks/notebooks-manage.html#import-a-notebook" target="blank_">here</a> (import under workspace or individual user).
 
 ## Additional notes
 
