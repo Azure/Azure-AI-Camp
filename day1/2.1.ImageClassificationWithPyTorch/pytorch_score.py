@@ -31,8 +31,12 @@ def transform_image(array):
 
 def init():
     global model
-    # Get a registered model
-    model_path = Model.get_model_path('suspicious-behavior-pytorch')
+    # Get a registered model example:
+#     model_path = Model.get_model_path('suspicious-behavior-pytorch')
+    VERSION = os.getenv('VERSION','') # this is provided by the inference config
+    MODEL_NAME = os.getenv('MODEL_NAME', '') # this is provided by the inference config
+    AZUREML_MODEL_DIR = os.getenv('AZUREML_MODEL_DIR', '') # this env var is native to the Azure ML container
+    model_path = os.path.join(AZUREML_MODEL_DIR, MODEL_NAME, VERSION, 'model_finetuned.pth')
     # Load with pytorch
     model = torch.load(model_path, map_location=lambda storage, loc: storage)
     # Set to evaluation mode

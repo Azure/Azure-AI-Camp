@@ -233,15 +233,15 @@ def main():
                         default='models')
     parser.add_argument('--learning_rate', type=float,
                         default=0.001, help='learning rate')
-    parser.add_argument('--trans', type=str, default='True',
+    parser.add_argument('--transfer', type=str, default='True',
                         help='Set to True if wishing to use transfer learning')
     parser.add_argument('--momentum', type=float, default=0.9, help='momentum')
     args = parser.parse_args()
 
     print("data directory is: {}".format(args.data_dir))
-    print("using transfer learning: {}".format(args.trans))
+    print("using transfer learning: {}".format(args.transfer))
     model = fine_tune_model(args.num_epochs, args.data_dir,
-                            args.learning_rate, args.momentum, bool(args.trans))
+                            args.learning_rate, args.momentum, bool(args.transfer))
     os.makedirs(args.output_dir, exist_ok=True)
     torch.save(model, os.path.join(args.output_dir, 'model_finetuned.pth'))
     # model = run.register_model(model_name='suspicious-behavior-pytorch', 
