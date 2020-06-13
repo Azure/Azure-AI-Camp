@@ -72,7 +72,7 @@
       "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
       "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
       "apiVersion": "2015-06-15",
-      "scriptUri": "https://raw.githubusercontent.com/michhar/Azure-AI-Camp/michhar/instructor-dsvm/dsvm-setup.sh"
+      "scriptUri": "https://raw.githubusercontent.com/Azure/Azure-AI-Camp/michhar/instructor-dsvm/instructor/DSVM_Setup/dsvm-setup.sh"
     },
     "resources": [
       {
