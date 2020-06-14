@@ -9,6 +9,7 @@ config.json
 *.mov
 *.mp4
 usersinfo.csv
+params.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
