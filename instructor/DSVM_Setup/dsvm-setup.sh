@@ -20,20 +20,11 @@ else
     echo "Working in $(pwd)"
 fi
 
-## now create the env...
-condapath=/home/$adminUser/.conda/envs
-
-if [ ! -d $condapath ]; then
-    mkdir -p $condapath
-fi
-
-# Clone the content for the workshop
-mkdir -p /etc/skel/notebooks
-cd /etc/skel/notebooks
+# Clone the content for the workshop in notebooks dir
 git clone https://github.com/Azure/Azure-AI-Camp.git
 
 ## Add user to docker group
-sudo usermod -aG docker $adminUser
+usermod -aG docker $adminUser
 
 ## Reboot jupyterhub
 systemctl restart jupyterhub

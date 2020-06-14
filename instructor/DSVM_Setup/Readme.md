@@ -16,7 +16,7 @@ Just click this button (see below for details).
 
 **IMPORTANT NOTE**:  Due to JupyterHub requirements, keep your **admin name for this VM all lowercase**.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmichhar%2FAzure-AI-Camp%2Fmaster%2Finstructor%2FDSVM_Setup%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmichhar%2FAzure-AI-Camp%2Fmichhar%2Finstructor-dsvm%2Finstructor%2FDSVM_Setup%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
@@ -67,3 +67,33 @@ It does the following:
 - Makes sure that permissions are appropriate to the admin user.
 
 See the [dsvm-setup.sh](dsvm-setup.sh) file for details.
+
+
+## Creating the DSVM for Linux (Ubuntu) using command line and execute a post install script on the VM Instance
+
+To create the Ubuntu DSVM with the Azure CLI Version 2, use the steps below. These use the ARM template azuredeploycli.json. This also executes a post install bash script that can configure the VM to your needs or install any additional packages you want on the VM.
+
+Step 1: Create a Parameter file (JSON format like `params-template.json`) for the DSVM you are going to deploy. The file looks like:
+
+```
+  {
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+       "dnsLabelPrefix": {"value": "DNS LABEL e.g. alexandria"},
+       "adminUsername": { "value" : "USERNAME e.g. cleopatra (please keep all lowercase)"},
+       "adminPassword": { "value" : "PASSWORD (there are special requirements)"},
+       "vmName": { "value" : "VM NAME e.g. egypt"},
+       "vmSize": { "value" : "VM SIZE e.g. Standard_DS3_v2"}
+    }
+  }
+```
+
+Replace the parameters with values you will use for your new DSVM you are creating. A list of allowed vmSize is found in the [Ubuntu DSVM ARM template](azuredeploy.json). 
+
+Step 2: Use the following Azure CLI to create VM:
+
+    # Follow instructions of az login to signin to your Azure account. May need to select subscription if you have multiple
+    az login
+    az group create --name <NAME OF RESOURCE GROUP> --location <Data center. For eg: "West US 2">
+    az group deployment create --resource-group  <NAME OF RESOURCE GROUP ABOVE>  --template-file azuredeploy.json --parameters @params.json
