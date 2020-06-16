@@ -1,0 +1,11 @@
+{
+   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+   "contentVersion": "1.0.0.0",
+   "parameters": {
+      "dnsLabelPrefix": {"value": "DNS LABEL e.g. alexandria"},
+      "adminUsername": { "value" : "USERNAME e.g. cleopatra (please keep all lowercase)"},
+      "adminPassword": { "value" : "PASSWORD (there are special requirements)"},
+      "vmName": { "value" : "VM NAME e.g. egypt"},
+      "vmSize": { "value" : "VM SIZE e.g. Standard_DS3_v2"}
+   }
+ }
