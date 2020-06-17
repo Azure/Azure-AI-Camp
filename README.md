@@ -49,10 +49,10 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 ### Day 2
 ---
 1. Deep dive into Databricks
-2. Azure ML with Databricks
-3. Parallel and distributed training
+2. ETL with Databricks
+3. Auto ML with Databricks
+4. Parallel and distributed training with Horovod and Databricks
 
-- And more!
 
 ## Technologies
 
