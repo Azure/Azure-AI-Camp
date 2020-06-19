@@ -1,6 +1,6 @@
 # Azure ML Overivew
 
-Please refer to the Azure Machine Learning <a href="" target="blank_">documentation</a> for the latest on:
+Please refer to the Azure Machine Learning <a href="https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-ml" target="blank_">documentation</a> for the latest on:
 
 - Preparing data
 - Training and testing custom ML models while tracking

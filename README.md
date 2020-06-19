@@ -34,24 +34,23 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 
 ### Day 1
 ---
-1. AI at MS Overview
-    - Data Science and Azure
-    - Cog Servs overview
+1. AI at Microsoft Overview
     - Azure ML overview
-    - Databricks overview
-2. Azure ML on DSVM
-    - Image classification with PyTorch estimator
-    - Object detection with YOLO 
-    - Azure ML with IoT
-3. Video Analytics discussion
- 
+    - Cognitive Services overview
+    - Data in Azure and Databricks overview
+    - AI and ML on Azure overview
+2. Azure ML deep dive and hands-on labs with the DSVM
+    - Image classification with PyTorch estimator hands-on lab
+    - Object detection with YOLO walkthrough
+    - Azure ML with IoT with hands-on lab
+
 
 ### Day 2
 ---
-1. Deep dive into Databricks
-2. ETL with Databricks
-3. Auto ML with Databricks
-4. Parallel and distributed training with Horovod and Databricks
+1. Databricks deep dive with ETL hands-on lab
+2. Auto ML with Databricks walkthrough
+3. Parallel and distributed training with Horovod walkthrough
+4. Live Video Analytics discussion
 
 
 ## Technologies
