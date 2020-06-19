@@ -16,7 +16,7 @@ Just click this button (see below for details).
 
 **IMPORTANT NOTE**:  Due to JupyterHub requirements, keep your **admin name for this VM all lowercase**.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmichhar%2FAzure-AI-Camp%2Fmichhar%2Finstructor-dsvm%2Finstructor%2FDSVM_Setup%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmichhar%2FAzure-AI-Camp%2Fmaster%2Finstructor%2FDSVM_Setup%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
