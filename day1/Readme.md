@@ -4,16 +4,15 @@ The day 1 platform is a Data Science Virtual Machine.  Please log in to Jupyterh
 
 Topics covered
 ---
-1. AI at MS Overview
-    - Data Science and Azure
-    - Cog Servs overview
+1. AI at Microsoft Overview
     - Azure ML overview
-    - Databricks overview
-2. Azure ML on DSVM
-    - Image classification with PyTorch estimator
-    - Object detection with YOLO 
-    - Azure ML with IoT
-3. Video Analytics discussion
+    - Cognitive Services overview
+    - Data in Azure and Databricks overview
+    - AI and ML on Azure overview
+2. Azure ML deep dive and hands-on labs with the DSVM
+    - Image classification with PyTorch estimator hands-on lab
+    - Object detection with YOLO walkthrough
+    - Azure ML with IoT with hands-on lab
 
 Instruction notes
 ---
