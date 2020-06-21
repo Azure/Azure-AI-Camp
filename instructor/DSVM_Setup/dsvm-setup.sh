@@ -22,6 +22,7 @@ fi
 
 # Clone the content for the workshop in notebooks dir
 git clone https://github.com/Azure/Azure-AI-Camp.git
+chmod -R ugo+rwx Azure-AI-Camp
 
 ## Add user to docker group
 usermod -aG docker $adminUser
