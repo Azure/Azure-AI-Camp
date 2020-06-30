@@ -63,13 +63,21 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 
 ## Setup on day-of
 
-1. Git clone repo
+1. Take care of the [prerequisites above](#prerequisites) and provision the necessary [resources](#resources-provisioned), as well.  If provisioning a DSVM for on-demand learning use the instructions in this repository found in the [instructor DSVM setup folder](https://github.com/Azure/Azure-AI-Camp/tree/master/instructor/DSVM_Setup).
+
+2. Git clone repo
 
     `git clone https://github.com/Azure/Azure-AI-Camp.git`
 
-2. Create or download Azure ML Workspace configuration file (`config.json`) locally - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-environment#workspace" target="blank_">Doc</a>
+3. Create or download Azure ML Workspace configuration file (`config.json`) locally - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-environment#workspace" target="blank_">Doc</a>
 
 ## On-demand learning
+
+**Setup**
+
+Follow the process above in the [Setup on day-of](#setup-on-day-of) section.
+
+**Instructions**
 
 Browse through day 1 and day 2 folders, noting that there are individual `Readme.md` documents in each section.  The day 1 platform is an Azure Data Science Machine and for day 2, the work will be done on a Databricks Workspace.  Various datasets in computer vision and related fields are used in conjuction with tools like Jupyter notebooks, Databricks notebooks, the Azure ML Python SDK and more.
 
