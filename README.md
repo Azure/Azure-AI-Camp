@@ -11,12 +11,12 @@ Required
     - <a href="https://azure.microsoft.com/en-us/free/" target="blank_">Free trial</a>
     - <a href="https://github.com/siriuscomputersolutions/azure-cie/blob/master/1-GovMonSec/2-Exercise%20-%20Create%20an%20Azure%20Pass%20subscription%20-%2010%20mins.md" target="blank_">Redeem Azure Pass</a>
 3.  Git proficiency and installed locally -  <a href="https://guides.github.com/introduction/git-handbook/" target="blank_">Git Handbook</a>
+4.  VSCode (for IoT section) - <a href="https://code.visualstudio.com/download" target="blank_">Download Visual Studio Code</a>
 
 Recommended
 
 1.  Machine learning and computer vision basics - <a href="https://cs231n.github.io/classification/" target="blank_">Course material on image classification</a>
-1.  Python 3.6+ installed locally - <a href="https://docs.anaconda.com/anaconda/install/" target="blank_">Installation of Anaconda</a>
-2.  Code editor like VSCode - <a href="https://code.visualstudio.com/download" target="blank_">Download Visual Studio Code</a>
+2.  Python 3.6+ installed locally - <a href="https://docs.anaconda.com/anaconda/install/" target="blank_">Installation of Anaconda</a>
 
 ## Resources provisioned
 
