@@ -77,6 +77,10 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 
 Follow the process above in the [Setup on day-of](#setup-on-day-of) section.
 
+IMPORTANT NOTES:  
+- The JupyterHub system on the DSVM does not work well with Safari, however should be fine in Chrome, Firefox and Edge.  A security/certificate warning may appear.  Click on advanced link and continue to site as we know it is a trusted Azure site.  In Chrome, a trick on the warning page (if clicking through is not an option) is on this [SO post](https://stackoverflow.com/questions/35274659/does-using-badidea-or-thisisunsafe-to-bypass-a-chrome-certificate-hsts-error) stating "Note as now mentioned in the question itself, the passphrase has changed again. As of Chrome 65 it is _thisisunsafe_".  Typing that phrase with the window open will allow passage through the warning.  This is a known issue with JupyterHub, Chrome and the DSVM.
+- When setting up Databricks clusters care must be taken to **not use the ML-type** clusters with Azure ML SDK Python package as they are not compatible, however for the ETL notebooks and some of the others, where Azure ML is not used, an ML-type Spark cluster will be fine.
+
 **Instructions**
 
 Browse through day 1 and day 2 folders, noting that there are individual `Readme.md` documents in each section.  The day 1 platform is an Azure Data Science Machine and for day 2, the work will be done on a Databricks Workspace.  Various datasets in computer vision and related fields are used in conjuction with tools like Jupyter notebooks, Databricks notebooks, the Azure ML Python SDK and more.
