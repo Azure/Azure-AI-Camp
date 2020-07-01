@@ -11,12 +11,12 @@ Required
     - <a href="https://azure.microsoft.com/en-us/free/" target="blank_">Free trial</a>
     - <a href="https://github.com/siriuscomputersolutions/azure-cie/blob/master/1-GovMonSec/2-Exercise%20-%20Create%20an%20Azure%20Pass%20subscription%20-%2010%20mins.md" target="blank_">Redeem Azure Pass</a>
 3.  Git proficiency and installed locally -  <a href="https://guides.github.com/introduction/git-handbook/" target="blank_">Git Handbook</a>
+4.  VSCode (for IoT section) - <a href="https://code.visualstudio.com/download" target="blank_">Download Visual Studio Code</a>
 
 Recommended
 
 1.  Machine learning and computer vision basics - <a href="https://cs231n.github.io/classification/" target="blank_">Course material on image classification</a>
-1.  Python 3.6+ installed locally - <a href="https://docs.anaconda.com/anaconda/install/" target="blank_">Installation of Anaconda</a>
-2.  Code editor like VSCode - <a href="https://code.visualstudio.com/download" target="blank_">Download Visual Studio Code</a>
+2.  Python 3.6+ installed locally - <a href="https://docs.anaconda.com/anaconda/install/" target="blank_">Installation of Anaconda</a>
 
 ## Resources provisioned
 
@@ -63,13 +63,25 @@ In this workshop, the following resources will get provisioned.  In practice, mo
 
 ## Setup on day-of
 
-1. Git clone repo
+1. Take care of the [prerequisites above](#prerequisites) and provision the necessary [resources](#resources-provisioned), as well.  If provisioning a DSVM for on-demand learning use the instructions in this repository found in the [instructor DSVM setup folder](https://github.com/Azure/Azure-AI-Camp/tree/master/instructor/DSVM_Setup).
+
+2. Git clone repo
 
     `git clone https://github.com/Azure/Azure-AI-Camp.git`
 
-2. Create or download Azure ML Workspace configuration file (`config.json`) locally - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-environment#workspace" target="blank_">Doc</a>
+3. Create or download Azure ML Workspace configuration file (`config.json`) locally - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-environment#workspace" target="blank_">Doc</a>
 
 ## On-demand learning
+
+**Setup**
+
+Follow the process above in the [Setup on day-of](#setup-on-day-of) section.
+
+IMPORTANT NOTES:  
+- The JupyterHub system on the DSVM does not work well with Safari, however should be fine in Chrome, Firefox and Edge.  A security/certificate warning may appear.  Click on advanced link and continue to site as we know it is a trusted Azure site.  In Chrome, a trick on the warning page (if clicking through is not an option) is on this [SO post](https://stackoverflow.com/questions/35274659/does-using-badidea-or-thisisunsafe-to-bypass-a-chrome-certificate-hsts-error) stating "Note as now mentioned in the question itself, the passphrase has changed again. As of Chrome 65 it is _thisisunsafe_".  Typing that phrase with the window open will allow passage through the warning.  This is a known issue with JupyterHub, Chrome and the DSVM.
+- When setting up Databricks clusters care must be taken to **not use the ML-type** clusters with Azure ML SDK Python package as they are not compatible, however for the ETL notebooks and some of the others, where Azure ML is not used, an ML-type Spark cluster will be fine.
+
+**Instructions**
 
 Browse through day 1 and day 2 folders, noting that there are individual `Readme.md` documents in each section.  The day 1 platform is an Azure Data Science Machine and for day 2, the work will be done on a Databricks Workspace.  Various datasets in computer vision and related fields are used in conjuction with tools like Jupyter notebooks, Databricks notebooks, the Azure ML Python SDK and more.
 

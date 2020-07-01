@@ -20,6 +20,8 @@ Just click this button (see below for details).
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
+**Important**:  Please Restart the VM to ensure some of the dependencies are properly set up (specifically docker permissions).  This can be done in the Azure Portal in the Overview blade.
+
 ## VM size options
 
 The default option is `DS12_v2`, a lower-end "Memory optimized" CPU VM with:
@@ -31,7 +33,7 @@ The default option is `DS12_v2`, a lower-end "Memory optimized" CPU VM with:
 
 For infomation on pricing see the <a href="https://azure.microsoft.com/en-us/pricing/" target="_blank">Pricing calculator</a>.  Also, please see the notes in the VM sizes for CPU memory optimized VMs in this <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-memory" target="_blank">documentation</a> or for NVIDIA GPU VMs in this <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu" target="_blank">documentation</a>).
 
-**Specifically** note that the `vCPU` core quota for `_v2` and `_v3` series VMs is initially **set to 0 in each region** for every subscription. You must [request a vCPU quota increase](https://docs.microsoft.com/en-us/azure/azure-supportability/resource-manager-core-quotas-request) for these families in an [available region](https://azure.microsoft.com/regions/services/). If you choose one of the `NCXX_v2` or `NCXX_v3` VM sizes in the template without increasing your quota, the deployment **WILL FAIL**.
+**Specifically** note that the `vCPU` core quota for NC-series `_v2` and `_v3` series VMs is initially **set to 0 in each region** for every subscription. You must [request a vCPU quota increase](https://docs.microsoft.com/en-us/azure/azure-supportability/resource-manager-core-quotas-request) for these families in an [available region](https://azure.microsoft.com/regions/services/). If you choose one of the `NCXX_v2` or `NCXX_v3` VM sizes in the template without increasing your quota, the deployment **WILL FAIL**.
 
 ## What is deployed?
 
@@ -39,7 +41,7 @@ You define the name of a resource group, and the following services get deployed
   - An [Ubuntu-based Data Science VM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro) with your defined user name and password.
   - Storage: A storage account and 2 disks for storing data
   - A network interface, virtual network, and public IP address
-  
+
 ## What do I as a user control?
 
 When you click on the `Deploy to Azure` button above, a custom template will launch in the Azure portal that asks you for some information:
